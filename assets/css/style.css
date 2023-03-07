@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+}
+
+body {
+    color: #ffffff;
+    background-color: #132f23;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    color: #000000;
+    background-color: #fff9f0;
+    padding: 0px 30px;
+    display: flex; 
+}
+
+.headshot {
+    border-radius: 100%;
+    margin-top: 25px;
+}
+
+.name {
+    font-size: 400%;
+    padding: 0px 30px;
+    position: relative;
+    bottom: -80px;
+}
+
+.header ul {
+    list-style-type: none;
+    font-family: "BodoniFLF", serif;
+    font-style: italic;
+    font-size: 200%;
+    margin-top: 145px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.aside {
+    color: #000000;
+    flex: 1;
+    text-align: center;
+    background-color: #c0e7ff;
+    float: left;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.aside ul {
+    list-style-type: none;
+}
+
+.aside ul li {
+    font-family: "BodoniFLF", serif;
+    font-style: italic;
+}
+
+.content div {
+    flex: 4;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.project-1 {
+    background-color: #ff92a2;
+    border-radius: 5%;
+    flex: 0 0 500px;
+}
+
+.project-1 h3 {
+    font-size: 300%;
+}
+
+.project-1 img {
+    width: 500px;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+.projects-cont div {
+    background-color: #ff92a2;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5%;
+    flex: 0 0 300px;
+}
+
+.projects-cont div img {
+    width: 300px;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+.about-me {
+    border-style: dotted;
+    border-color: #fff9f0;
+    font-family: "BodoniFLF", serif;
+    font-size: 125%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-family: "BodoniFLF", serif;
+    font-style: italic;
+    font-size: 130%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .header img {
+        width: 90%;
+        height: 90%;
+        align-self: center;
+    }
+
+    .header ul li {
+        display: block;
+    }
+    
+    .aside {
+        float: none;
+    }
+    
+    .content div {
+        display: column;
+    }
+}
